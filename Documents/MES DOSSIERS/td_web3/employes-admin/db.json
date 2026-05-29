@@ -1,0 +1,31 @@
+{
+  "employes": [
+    {
+      "id": 1,
+      "firstname": "Alice",
+      "name": "Martin",
+      "email": "alice@company.com",
+      "Departement": "Informatique",
+      "Salaire": 2800,
+      "Actif": true
+    },
+    {
+      "id": 2,
+      "firstname": "Bob",
+      "name": "Dupont",
+      "email": "bob@company.com",
+      "Departement": "Marketing",
+      "Salaire": 2500,
+      "Actif": true
+    },
+    {
+      "id": 3,
+      "firstname": "Clara",
+      "name": "Nguyen",
+      "email": "clara@company.com",
+      "Departement": "RH",
+      "Salaire": 2600,
+      "Actif": false
+    }
+  ]
+}
