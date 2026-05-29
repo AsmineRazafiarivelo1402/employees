@@ -1,4 +1,3 @@
-// src/employees/EmployeeList.tsx
 import { List, Datagrid, TextField, EmailField, NumberField, BooleanField, EditButton, DeleteButton, SearchInput, SelectInput } from 'react-admin';
 
 const employeeFilters = [

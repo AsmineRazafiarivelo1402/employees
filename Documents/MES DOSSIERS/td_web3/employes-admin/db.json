@@ -26,6 +26,15 @@
       "departement": "RH",
       "salaire": 2600,
       "active": false
+    },
+    {
+      "active": true,
+      "firstname": "h",
+      "lastname": "jjfyy",
+      "email": "zz",
+      "departement": "Informatique",
+      "salaire": 1500,
+      "id": 4
     }
   ]
 }
