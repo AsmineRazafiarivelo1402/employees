@@ -1,31 +1,31 @@
 {
-  "employes": [
+  "employees": [
     {
       "id": 1,
       "firstname": "Alice",
-      "name": "Martin",
+      "lastname": "Martin",
       "email": "alice@company.com",
-      "Departement": "Informatique",
-      "Salaire": 2800,
-      "Actif": true
+      "departement": "Informatique",
+      "salaire": 2800,
+      "active": true
     },
     {
       "id": 2,
       "firstname": "Bob",
-      "name": "Dupont",
+      "lastname": "Dupont",
       "email": "bob@company.com",
-      "Departement": "Marketing",
-      "Salaire": 2500,
-      "Actif": true
+      "departement": "Marketing",
+      "salaire": 2500,
+      "active": true
     },
     {
       "id": 3,
       "firstname": "Clara",
-      "name": "Nguyen",
+      "lastname": "Nguyen",
       "email": "clara@company.com",
-      "Departement": "RH",
-      "Salaire": 2600,
-      "Actif": false
+      "departement": "RH",
+      "salaire": 2600,
+      "active": false
     }
   ]
 }
