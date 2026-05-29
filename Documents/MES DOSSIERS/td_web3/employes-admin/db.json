@@ -5,7 +5,7 @@
       "firstname": "Alice",
       "lastname": "Martin",
       "email": "alice@company.com",
-      "departement": "Informatique",
+      "departement": "RH",
       "salaire": 2800,
       "active": true
     },
