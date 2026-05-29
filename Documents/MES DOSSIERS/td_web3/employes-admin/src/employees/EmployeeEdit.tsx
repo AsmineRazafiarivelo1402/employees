@@ -36,7 +36,7 @@ export const EmployeeEdit = () => (
                     { id: 'Informatique', name: 'Informatique' },
                     { id: 'Marketing', name: 'Marketing' },
                     { id: 'RH', name: 'RH' },
-                    { id: 'Finance', name: 'Finance' }
+                   
                 ]}
                 validate={required()}
                 fullWidth
