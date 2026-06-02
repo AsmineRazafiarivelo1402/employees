@@ -114,7 +114,7 @@
       "departement": "Informatique",
       "employee_id": 9,
       "remunerate": false,
-      "active": true
+      "active": false
     },
     {
       "id": 2,

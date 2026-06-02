@@ -24,6 +24,16 @@ const internsFilters = [
       { id: "RH", name: "RH" },
     ]}
   />,
+  <SelectInput
+    label="Remunerate"
+    source="remunerate"
+    alwaysOn
+    key="remunerate"
+    choices={[
+      { id: "true", name: "true" },
+      { id: "false", name: "false" },
+    ]}
+  />,
 ];
 
 export const InternList = () => (
