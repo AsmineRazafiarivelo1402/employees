@@ -14,7 +14,7 @@ const EmployeeTitle = () => {
   const record = useRecordContext();
 
   if (!record) return <span>Chargement...</span>;
-  return <span>Modifier : {record.salary}</span>;
+  return <span>Modifier : {record.firstname}</span>;
 };
 
 export const EmployeeEdit = () => (

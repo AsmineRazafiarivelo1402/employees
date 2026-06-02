@@ -9,14 +9,8 @@ import {
   DeleteButton,
   SearchInput,
   SelectInput,
-  useRecordContext,
 } from "react-admin";
-const EmployeeFullName = () => {
-  const record = useRecordContext();
 
-  if (!record) return <span>Chargement...</span>;
-  return <span>Modifier : {record.id}</span>;
-};
 const internsFilters = [
   <SearchInput source="q" key="search" alwaysOn />,
   <SelectInput
@@ -49,8 +43,8 @@ export const InternList = () => (
           <TextField source="lastname" />
         </ReferenceField>
       </DataTable.Col>
-      <DataTable.Col source="renumerate">
-        <BooleanField source="renumerate" />
+      <DataTable.Col source="remunerate">
+        <BooleanField source="remunerate" />
       </DataTable.Col>
       <DataTable.Col source="active">
         <BooleanField source="active" />

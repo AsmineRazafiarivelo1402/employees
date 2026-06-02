@@ -73,59 +73,190 @@
       "id": 9
     }
   ],
-  "interns":[
-     {
+  "interns": [
+    {
       "id": 2,
       "firstname": "Mia",
       "lastname": "Zumba",
       "email": "mia@company.com",
       "departement": "Informatique",
-      "employee_id" :2, 
-      "renumerate": true,
-      "salary":1500000000,
+      "employee_id": 2,
+      "remunerate": true,
+      "salary": 1500000000,
       "active": true
     },
-      {
+    {
       "id": 3,
       "firstname": "Ami",
       "lastname": "Pola",
       "email": "pola@company.com",
       "departement": "Informatique",
-      "employee_id" :5, 
-      "renumerate": false,
+      "employee_id": 5,
+      "remunerate": false,
       "active": true
     },
-      {
+    {
       "id": 4,
       "firstname": "Akuna",
       "lastname": "Matata",
       "email": "akuna@company.com",
       "departement": "Informatique",
-      "employee_id" :4, 
-      "renumerate": true,
-      "salary":148000000,
+      "employee_id": 4,
+      "remunerate": true,
+      "salary": 148000000,
       "active": true
     },
-      {
+    {
       "id": 5,
       "firstname": "Roi",
       "lastname": "Lion",
       "email": "roi@company.com",
       "departement": "Informatique",
-      "employee_id" :9, 
-      "renumerate": false,
+      "employee_id": 9,
+      "remunerate": false,
       "active": true
     },
-      {
+    {
       "id": 2,
       "firstname": "Pomba",
       "lastname": "Mustafa",
       "email": "pomba@company.com",
       "departement": "Informatique",
-      "employee_id" :88, 
-      "renumerate": true,
-      "salary":500000,
+      "employee_id": 88,
+      "remunerate": true,
+      "salary": 500000,
       "active": true
+    },
+    {
+      "active": true,
+      "firstname": "fa",
+      "lastname": "fa",
+      "email": "fa@gmail.com",
+      "departement": "Marketing",
+      "salary": 1502,
+      "id": 6
+    },
+    {
+      "remunerate": false,
+      "active": true,
+      "firstname": "ki",
+      "lastname": "ki",
+      "email": "ki@gmail.com",
+      "employee_id": 1,
+      "departement": "RH",
+      "salary": 14444,
+      "id": 7
+    },
+    {
+      "remunerate": true,
+      "active": true,
+      "firstname": "madeleine",
+      "lastname": "mamy",
+      "email": "mamy@gmail.com",
+      "employee_id": 2,
+      "departement": "Marketing",
+      "salary": 12000,
+      "id": 8
+    },
+    {
+      "remunerate": false,
+      "active": true,
+      "firstname": "eeee",
+      "lastname": "aaa",
+      "email": "ae@gmail.com",
+      "departement": "Marketing",
+      "id": 9
+    },
+    {
+      "remunerate": false,
+      "active": true,
+      "firstname": "aa",
+      "lastname": "aa",
+      "email": "k@gmail.com",
+      "employee_id": 88,
+      "departement": "Marketing",
+      "id": 10
+    },
+    {
+      "remunerate": false,
+      "active": false,
+      "firstname": "lala",
+      "lastname": "lala",
+      "email": "lala@gmail.com",
+      "employee_id": 5,
+      "departement": "Marketing",
+      "id": 11
+    },
+    {
+      "remunerate": false,
+      "active": true,
+      "firstname": "mety",
+      "lastname": "tsyMety",
+      "email": "mety@gmail.com",
+      "employee_id": 2,
+      "departement": "Marketing",
+      "id": 12
+    },
+    {
+      "remunerate": false,
+      "active": true,
+      "firstname": "d",
+      "lastname": "d",
+      "email": "d@gmail.com",
+      "employee_id": 3,
+      "departement": "Marketing",
+      "id": 13
+    },
+    {
+      "remunerate": false,
+      "active": true,
+      "firstname": "b",
+      "lastname": "b",
+      "email": "b@gmail.com",
+      "employee_id": 3,
+      "departement": "Marketing",
+      "id": 14
+    },
+    {
+      "remunerate": false,
+      "active": true,
+      "firstname": "m",
+      "lastname": "m",
+      "email": "m@gmail.com",
+      "employee_id": 2,
+      "departement": "Marketing",
+      "id": 15
+    },
+    {
+      "remunerate": false,
+      "active": true,
+      "firstname": "show",
+      "lastname": "seen",
+      "email": "show@gmail.com",
+      "employee_id": 3,
+      "departement": "Marketing",
+      "id": 16
+    },
+    {
+      "remunerate": false,
+      "active": true,
+      "firstname": "a",
+      "lastname": "a",
+      "email": "a@gmail.com",
+      "employee_id": 8,
+      "departement": "Marketing",
+      "id": 17
+    },
+    {
+      "remunerate": true,
+      "active": true,
+      "firstname": "hala",
+      "lastname": "madrid",
+      "email": "real@gmail.com",
+      "employee_id": 2,
+      "departement": "Marketing",
+      "salary": 1500,
+      "id": 18
     }
   ]
 }

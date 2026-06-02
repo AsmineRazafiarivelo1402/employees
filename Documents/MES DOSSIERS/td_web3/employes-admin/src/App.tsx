@@ -7,6 +7,7 @@ import { EmployeeCreate } from "./employees/EmployeeCreate";
 import { EmployeeEdit } from "./employees/EmployeeEdit";
 import { EmployeeShow } from "./employees/EmployeeShow";
 import { InternList } from "./interns/InternList";
+import { InternCreate } from "./interns/InternCreate";
 const dataProvider = jsonServerProvider("http://localhost:3002");
 export const App = () => (
   <Admin dataProvider={dataProvider}>
@@ -20,7 +21,7 @@ export const App = () => (
     <Resource
       name="interns"
       list={InternList}
-      create={ListGuesser}
+      create={InternCreate}
       show={ListGuesser}
       edit={ListGuesser}
     />
