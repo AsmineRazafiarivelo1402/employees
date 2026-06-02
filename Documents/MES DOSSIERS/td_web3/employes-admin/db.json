@@ -80,7 +80,7 @@
       "lastname": "Zumba",
       "email": "mia@company.com",
       "departement": "Informatique",
-      "employee_id": 2,
+      "employee_id": 3,
       "remunerate": true,
       "salary": 1500000000,
       "active": true
@@ -179,13 +179,14 @@
     },
     {
       "remunerate": false,
-      "active": false,
+      "active": true,
       "firstname": "lala",
       "lastname": "lala",
       "email": "lala@gmail.com",
-      "employee_id": 5,
+      "employee_id": 2,
       "departement": "Marketing",
-      "id": 11
+      "id": 11,
+      "salary": null
     },
     {
       "remunerate": false,
@@ -193,7 +194,7 @@
       "firstname": "mety",
       "lastname": "tsyMety",
       "email": "mety@gmail.com",
-      "employee_id": 2,
+      "employee_id": 8,
       "departement": "Marketing",
       "id": 12
     },
@@ -208,14 +209,15 @@
       "id": 13
     },
     {
-      "remunerate": false,
+      "remunerate": true,
       "active": true,
       "firstname": "b",
       "lastname": "b",
       "email": "b@gmail.com",
-      "employee_id": 3,
+      "employee_id": 2,
       "departement": "Marketing",
-      "id": 14
+      "id": 14,
+      "salary": 1500
     },
     {
       "remunerate": false,

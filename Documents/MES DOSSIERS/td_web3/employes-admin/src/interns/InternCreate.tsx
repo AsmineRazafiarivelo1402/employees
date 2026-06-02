@@ -26,7 +26,7 @@ export const InternCreate = () => {
       return "Choose active employee";
     }
     if (!employeeExists) {
-      return "nothing";
+      return `Employee with ${value} doesn't exist`;
     }
   };
 
