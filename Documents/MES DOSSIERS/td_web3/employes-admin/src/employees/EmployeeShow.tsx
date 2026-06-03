@@ -8,6 +8,7 @@ import {
   TopToolbar,
   ListButton,
   EditButton,
+  useRecordContext,
 } from "react-admin";
 import { InternsByManager } from "../components/InternsByManager";
 import { DepartmentState } from "../components/DepartmentStats";
@@ -18,9 +19,17 @@ const EmployeeShowActions = () => (
     <EditButton label="Modifier" />
   </TopToolbar>
 );
-
+const EmployeeTitle = () => {
+  const record = useRecordContext();
+  if (!record) return null;
+  return (
+    <span>
+      {record.firstname} {record.lastname}
+    </span>
+  );
+};
 export const EmployeeShow = () => (
-  <Show actions={<EmployeeShowActions />}>
+  <Show actions={<EmployeeShowActions />} title={<EmployeeTitle />}>
     <SimpleShowLayout>
       <TextField source="firstname" label="Prénom" />
       <TextField source="lastname" label="Nom" />

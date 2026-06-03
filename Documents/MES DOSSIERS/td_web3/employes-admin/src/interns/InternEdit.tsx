@@ -23,7 +23,7 @@ export const InternEdit = () => {
     if (!record) return <span>Chargement...</span>;
     return (
       <span>
-        Modifier : {record.firstname} {record.lastname}
+        Modify: {record.firstname} {record.lastname}
       </span>
     );
   };

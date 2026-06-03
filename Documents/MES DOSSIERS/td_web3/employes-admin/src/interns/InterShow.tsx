@@ -7,6 +7,7 @@ import {
   TopToolbar,
   ListButton,
   EditButton,
+  useRecordContext,
 } from "react-admin";
 import { ManagerShow } from "../components/ManagerCard";
 const InternShowActions = () => (
@@ -15,8 +16,18 @@ const InternShowActions = () => (
     <EditButton label="Modifier" />
   </TopToolbar>
 );
+const InternTitle = () => {
+  const record = useRecordContext();
+
+  if (!record) return <span>Chargement...</span>;
+  return (
+    <span>
+      Modify: {record.firstname} {record.lastname}
+    </span>
+  );
+};
 export const InternShow = () => (
-  <Show actions={InternShowActions()}>
+  <Show actions={InternShowActions()} title={<InternTitle />}>
     <SimpleShowLayout>
       <TextField source="id" />
       <TextField source="firstname" />
