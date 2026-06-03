@@ -117,17 +117,6 @@
       "active": false
     },
     {
-      "id": 2,
-      "firstname": "Pomba",
-      "lastname": "Mustafa",
-      "email": "pomba@company.com",
-      "departement": "Informatique",
-      "employee_id": 88,
-      "remunerate": true,
-      "salary": 500000,
-      "active": true
-    },
-    {
       "active": true,
       "firstname": "fa",
       "lastname": "fa",
@@ -144,7 +133,6 @@
       "email": "ki@gmail.com",
       "employee_id": 1,
       "departement": "RH",
-      "salary": 14444,
       "id": 7
     },
     {
@@ -259,6 +247,16 @@
       "departement": "Marketing",
       "salary": 1500,
       "id": 18
+    },
+    {
+      "remunerate": false,
+      "active": true,
+      "firstname": "m",
+      "lastname": "fa",
+      "email": "fa@gmail.com",
+      "employee_id": 8,
+      "departement": "Marketing",
+      "id": 19
     }
   ]
 }

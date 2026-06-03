@@ -1,4 +1,4 @@
-import { Admin, EditGuesser, ListGuesser, Resource, ShowGuesser } from "react-admin";
+import { Admin, Resource } from "react-admin";
 
 import jsonServerProvider from "ra-data-json-server";
 // import { dataProvider } from "./dataProvider";
@@ -9,6 +9,7 @@ import { EmployeeShow } from "./employees/EmployeeShow";
 import { InternList } from "./interns/InternList";
 import { InternCreate } from "./interns/InternCreate";
 import { InternEdit } from "./interns/InternEdit";
+import { InternShow } from "./interns/InterShow";
 const dataProvider = jsonServerProvider("http://localhost:3002");
 export const App = () => (
   <Admin dataProvider={dataProvider}>
@@ -23,7 +24,7 @@ export const App = () => (
       name="interns"
       list={InternList}
       create={InternCreate}
-      show={ShowGuesser}
+      show={InternShow}
       edit={InternEdit}
     />
   </Admin>
