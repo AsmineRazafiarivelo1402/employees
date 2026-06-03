@@ -9,6 +9,7 @@ import {
   ListButton,
   EditButton,
 } from "react-admin";
+import { ManagerShow } from "./ManagerCard";
 const InternShowActions = () => (
   <TopToolbar>
     <ListButton label="Retour à la liste" />
@@ -23,6 +24,7 @@ export const InternShow = () => (
       <TextField source="lastname" />
       <EmailField source="email" />
       <TextField source="departement" />
+      <ManagerShow />
       <ReferenceField source="employee_id" reference="employees">
         <TextField source="firstname" />
         <span> </span>
