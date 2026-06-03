@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useWatch, useFormContext } from "react-hook-form";
 import {
   SelectInput,
   NumberInput,
@@ -10,25 +12,47 @@ import {
   TextInput,
   Create,
   useGetList,
+  ReferenceInput,
 } from "react-admin";
 
 import { Employee } from "../interface";
+
+const DepartmentField = ({ employees }: { employees?: Employee[] }) => {
+  const employeeId = useWatch({ name: "employee_id" });
+  const { setValue } = useFormContext();
+
+  const selectedEmployee = employees?.find(
+    (employee) => String(employee.id) === String(employeeId),
+  );
+
+  useEffect(() => {
+    if (selectedEmployee) {
+      setValue("departement", selectedEmployee.departement);
+    }
+  }, [selectedEmployee, setValue]);
+
+  const choices = selectedEmployee
+    ? [
+        {
+          id: selectedEmployee.departement,
+          name: selectedEmployee.departement,
+        },
+      ]
+    : [];
+
+  return (
+    <SelectInput
+      source="departement"
+      label="Département"
+      choices={choices}
+      validate={required()}
+      fullWidth
+    />
+  );
+};
+
 export const InternCreate = () => {
   const { data: employees } = useGetList<Employee>("employees");
-
-  const validateEmployeeId = (value: number) => {
-    if (!value) {
-      return "Le Manager ID est requis";
-    }
-
-    const employeeExists = employees?.find((emp) => emp.id === value);
-    if (employeeExists?.active === false) {
-      return "Choose active employee";
-    }
-    if (!employeeExists) {
-      return `Employee with ${value} doesn't exist`;
-    }
-  };
 
   return (
     <Create redirect="list">
@@ -39,37 +63,31 @@ export const InternCreate = () => {
           validate={required()}
           fullWidth
         />
+
         <TextInput
           source="lastname"
           label="LASTNAME"
           validate={required()}
           fullWidth
         />
+
         <TextInput
           source="email"
-          label="Email"
+          label="EMAIL"
           validate={[required(), email()]}
           fullWidth
         />
 
-        <NumberInput
-          source="employee_id"
-          label="Manager"
-          validate={validateEmployeeId}
-          fullWidth
-        />
+        <ReferenceInput source="employee_id" reference="employees">
+          <SelectInput
+            optionText={(record) => `${record.firstname} ${record.lastname}`}
+            label="MANAGER"
+            validate={required()}
+            fullWidth
+          />
+        </ReferenceInput>
 
-        <SelectInput
-          source="departement"
-          label="Département"
-          choices={[
-            { id: "Informatique", name: "Informatique" },
-            { id: "Marketing", name: "Marketing" },
-            { id: "RH", name: "RH" },
-          ]}
-          validate={required()}
-          fullWidth
-        />
+        <DepartmentField employees={employees} />
 
         <BooleanInput source="remunerate" label="REMUNERATE" />
 
@@ -87,7 +105,7 @@ export const InternCreate = () => {
           }
         </FormDataConsumer>
 
-        <BooleanInput source="active" label="Actif" defaultValue={true} />
+        <BooleanInput source="active" label="ACTIF" defaultValue={true} />
       </SimpleForm>
     </Create>
   );
