@@ -1,6 +1,5 @@
 import {
   Loading,
-  SimpleForm,
   SimpleShowLayout,
   TextField,
   useGetList,

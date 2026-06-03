@@ -8,7 +8,7 @@ import {
   ListButton,
   EditButton,
 } from "react-admin";
-import { ManagerShow } from "../commponents/ManagerCard";
+import { ManagerShow } from "../components/ManagerCard";
 const InternShowActions = () => (
   <TopToolbar>
     <ListButton label="Retour à la liste" />

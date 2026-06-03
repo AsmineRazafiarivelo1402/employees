@@ -1,30 +1,7 @@
 {
   "employees": [
     {
-      "id": 3,
-      "firstname": "Clara",
-      "lastname": "Nguyen",
-      "email": "clara@company.com",
-      "departement": "RH",
-      "salary": 2600,
-      "active": false
-    },
-    {
-      "active": true,
-      "firstname": "h",
-      "lastname": "jjfyy",
-      "email": "zz",
-      "departement": "Informatique",
-      "salary": 1500,
-      "id": 4
-    },
-    {
-      "active": true,
-      "firstname": "Petit",
-      "lastname": "Small",
-      "email": "small@patit",
-      "departement": "Informatique",
-      "salary": 1500000000,
+      "active": false,
       "id": 5
     },
     {
@@ -37,12 +14,7 @@
       "id": 6
     },
     {
-      "active": false,
-      "firstname": "haha",
-      "lastname": "hihi",
-      "email": "hihi@haha",
-      "departement": "RH",
-      "salary": 12025,
+      "active": true,
       "id": 7
     },
     {
@@ -53,15 +25,6 @@
       "departement": "Finance",
       "salary": 1508,
       "id": 8
-    },
-    {
-      "active": true,
-      "firstname": "eto",
-      "lastname": "de ",
-      "email": "tsisy",
-      "departement": "Marketing",
-      "salary": 1500,
-      "id": 9
     }
   ],
   "interns": [

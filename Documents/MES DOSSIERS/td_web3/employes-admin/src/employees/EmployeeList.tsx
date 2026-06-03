@@ -10,6 +10,7 @@ import {
   SearchInput,
   SelectInput,
 } from "react-admin";
+import { ActiveButton } from "../components/QuickStatusToggle";
 
 const employeeFilters = [
   <SearchInput source="q" key="search" alwaysOn />,
@@ -39,6 +40,7 @@ export const EmployeeList = () => (
         options={{ style: "currency", currency: "EUR" }}
       />
       <BooleanField source="active" label="Actif" />
+      <ActiveButton />
       <EditButton />
       <DeleteButton />
     </Datagrid>
