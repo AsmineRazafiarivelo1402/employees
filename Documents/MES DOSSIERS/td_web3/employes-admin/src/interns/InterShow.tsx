@@ -1,7 +1,6 @@
 import {
   BooleanField,
   EmailField,
-  ReferenceField,
   Show,
   SimpleShowLayout,
   TextField,
@@ -9,7 +8,7 @@ import {
   ListButton,
   EditButton,
 } from "react-admin";
-import { ManagerShow } from "./ManagerCard";
+import { ManagerShow } from "../commponents/ManagerCard";
 const InternShowActions = () => (
   <TopToolbar>
     <ListButton label="Retour à la liste" />
@@ -25,11 +24,11 @@ export const InternShow = () => (
       <EmailField source="email" />
       <TextField source="departement" />
       <ManagerShow />
-      <ReferenceField source="employee_id" reference="employees">
+      {/* <ReferenceField source="employee_id" reference="employees">
         <TextField source="firstname" />
         <span> </span>
         <TextField source="lastname" />
-      </ReferenceField>
+      </ReferenceField> */}
       <BooleanField source="remunerate" />
       <BooleanField source="active" />
     </SimpleShowLayout>

@@ -6,7 +6,7 @@ export interface Employee {
   departement: string;
   salary: number;
   active: boolean;
-};
+}
 export interface Intern {
   id: number;
   firstname: string;
