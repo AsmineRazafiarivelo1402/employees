@@ -25,7 +25,7 @@ export const EmployeeShow = () => (
       <TextField source="firstname" label="Prénom" />
       <TextField source="lastname" label="Nom" />
       <EmailField source="email" label="Email" />
-      <TextField source="departement" label="Département" />
+      <DepartmentState />
       <NumberField
         source="salary"
         label="Salary"
@@ -33,7 +33,6 @@ export const EmployeeShow = () => (
       />
       <BooleanField source="active" label="Actif" />
       <InternsByManager />
-      <DepartmentState />
     </SimpleShowLayout>
   </Show>
 );

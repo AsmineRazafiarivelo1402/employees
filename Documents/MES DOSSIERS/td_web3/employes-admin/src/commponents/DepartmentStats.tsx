@@ -1,5 +1,6 @@
 import {
   Loading,
+  SimpleForm,
   SimpleShowLayout,
   TextField,
   useGetList,
@@ -21,7 +22,7 @@ export const DepartmentState = () => {
   return (
     <>
       <SimpleShowLayout>
-        <TextField source="departement" />
+        <TextField source="departement" label="Department" />
 
         <strong>{sameDepartment.length} Employees in this department</strong>
       </SimpleShowLayout>

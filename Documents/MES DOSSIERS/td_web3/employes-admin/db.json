@@ -1,15 +1,6 @@
 {
   "employees": [
     {
-      "id": 2,
-      "firstname": "bob",
-      "lastname": "Dupont",
-      "email": "bob@company.com",
-      "departement": "Informatique",
-      "salary": 2510,
-      "active": true
-    },
-    {
       "id": 3,
       "firstname": "Clara",
       "lastname": "Nguyen",
