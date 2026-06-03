@@ -89,5 +89,61 @@ Network de votre navigateur.
     **** This component fetches a referenced record (users in this example) using the dataProvider.getMany() method, and passes it to its child.
 
 # Question: 6.2 : Que se passe-t-il visuellement si managerId ne correspond à aucun employé ?
-# Réponse: 
+# Response: 
     **** the field is empty
+
+
+## Questions 7.1 — Quelle méthode HTTP est émise lors de la soumission de InternCreate ?
+# Response 
+:POST /interns — React-Admin calles dataProvider.create("interns", { data: {...} }).
+
+## 7.2 — Quel hook pour la validation conditionnelle de remuneration ?
+useWatch permet to read in real time the field value
+
+
+## 8.1 — Différence entre useGetOne et ReferenceField ?
+ReferenceField : declarative component for displaying a reference 
+useGetOne : hook that gives full control over
+rendering 
+
+## 8.2 — Que se passe-t-il si useGetOne reçoit id: undefined sans enabled ?
+React-Admin envoie immédiatement GET /employees/undefined, Error
+
+
+## 9.1 — Différence entre useGetList et ReferenceManyField ?
+ReferenceManyField : declarative and only works inside a SimpleShowLayout.
+useGetList is essential when you need a custom render (title with total, styled list,
+empty message) or need to access the total independently from the data.
+
+## 9.2 — Comment optimiser la requête de DepartmentStats ?
+On utilise perPage: 1 
+Un seul enregistrement est transféré au lieu de tous les employés du département.
+
+
+## 10.1 — Quelle méthode HTTP useUpdate utilise-t-il par défaut ?
+PUT by default. To force PATCH: pass meta: { method: "PATCH" } in the parameters.
+
+## 10.2 — Pourquoi previousData est-il nécessaire ?
+It allows React-Admin to perform an optimistic update (UI updated immediately)
+and restore the previous state on error (rollback). Without it, optimistic update
+is disabled and the UI waits for the server response.
+
+
+## 11.1 — Différence entre useCreate et le composant <Create> ?
+<Create> is a dedicated page with React-Admin layout and redirect after success.
+useCreate is a low-level hook that creates without navigating, usable in any
+component (modal, drawer, inline).
+
+## 11.2 — Comment recharger la liste après useCreate ?
+Call useRefresh() in the onSuccess callback. It invalidates the React-Admin cache
+and triggers a new getList that updates the Datagrid automatically.
+
+
+## 12.1 — Les 4 appels useGetList se font-ils en parallèle ou en séquence ?
+In parallel. Each useGetList is an independent hook executed in the same React
+render cycle. The 4 HTTP requests are triggered simultaneously.
+
+## 12.2 — Pourquoi perPage: 1 est préférable à perPage: 100 ?
+Only the total field is needed, not the data itself. perPage: 1 reduces the amount
+of data transferred, speeds up the server response and limits memory used by
+the React-Admin cache.
