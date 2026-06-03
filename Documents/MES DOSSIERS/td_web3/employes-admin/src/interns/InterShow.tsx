@@ -9,7 +9,7 @@ import {
   EditButton,
   useRecordContext,
 } from "react-admin";
-import { ManagerShow } from "../components/ManagerCard";
+import { ManagerCard } from "../components/ManagerCard";
 const InternShowActions = () => (
   <TopToolbar>
     <ListButton label="Retour à la liste" />
@@ -34,7 +34,7 @@ export const InternShow = () => (
       <TextField source="lastname" />
       <EmailField source="email" />
       <TextField source="departement" />
-      <ManagerShow />
+      <ManagerCard />
       {/* <ReferenceField source="employee_id" reference="employees">
         <TextField source="firstname" />
         <span> </span>
