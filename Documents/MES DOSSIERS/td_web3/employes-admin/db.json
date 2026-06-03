@@ -17,6 +17,42 @@
       "departement": "Finance",
       "salary": 1508,
       "id": 8
+    },
+    {
+      "firstname": "Mendria",
+      "lastname": "mand",
+      "email": "fiarvelomiria@gmail.com",
+      "departement": "Marketing",
+      "salary": 245800000000,
+      "active": true,
+      "id": 9
+    },
+    {
+      "firstname": "Lala",
+      "lastname": "Lili",
+      "email": "lili@gmail.com",
+      "departement": "Informatique",
+      "salary": 587000000,
+      "active": true,
+      "id": 10
+    },
+    {
+      "firstname": "Mia",
+      "lastname": "Maia",
+      "email": "mi@gmail.com",
+      "departement": "RH",
+      "salary": 1450000000000000,
+      "active": true,
+      "id": 11
+    },
+    {
+      "firstname": "adam",
+      "lastname": "cmc",
+      "email": "ac@gmail.com",
+      "departement": "Marketing",
+      "salary": 4500000000,
+      "active": true,
+      "id": 12
     }
   ],
   "interns": [
@@ -111,6 +147,48 @@
       "active": true,
       "salary": 150000,
       "id": 9
+    },
+    {
+      "firstname": "lafzek",
+      "lastname": "zlvjzakem",
+      "email": "lfhel@gmail.com",
+      "employee_id": 12,
+      "departement": "Marketing",
+      "remunerate": false,
+      "active": true,
+      "id": 10
+    },
+    {
+      "firstname": "lfezhpo",
+      "lastname": "tcdsle",
+      "email": "dzal@gmail.com",
+      "employee_id": 11,
+      "departement": "RH",
+      "remunerate": false,
+      "active": true,
+      "id": 11
+    },
+    {
+      "firstname": "lah\"'pt",
+      "lastname": "zlut\"'p",
+      "email": "ap@gmail.com",
+      "employee_id": 10,
+      "departement": "Informatique",
+      "remunerate": true,
+      "active": true,
+      "salary": 15000000,
+      "id": 12
+    },
+    {
+      "firstname": "lRPÙAT^\"",
+      "lastname": "QLMFZÙ",
+      "email": "QL@gmail.com",
+      "employee_id": 9,
+      "departement": "Marketing",
+      "remunerate": true,
+      "active": true,
+      "salary": 1450000,
+      "id": 13
     }
   ]
 }
