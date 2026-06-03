@@ -11,7 +11,6 @@ import {
 } from "react-admin";
 import { InternsByManager } from "../components/InternsByManager";
 import { DepartmentState } from "../components/DepartmentStats";
-import { ActiveButton } from "../components/QuickStatusToggle";
 
 const EmployeeShowActions = () => (
   <TopToolbar>
@@ -34,7 +33,6 @@ export const EmployeeShow = () => (
       />
       <BooleanField source="active" label="Actif" />
       <InternsByManager />
-      <ActiveButton />
     </SimpleShowLayout>
   </Show>
 );
