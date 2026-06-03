@@ -9,25 +9,14 @@ import {
   FormDataConsumer,
   required,
   minValue,
+  ReferenceInput,
+  SelectInput,
 } from "react-admin";
 import { Employee } from "../interface";
-
+import { DepartmentField } from "./InternCreate";
 export const InternEdit = () => {
   const { data: employees } = useGetList<Employee>("employees");
 
-  const validateEmployeeId = (value: number) => {
-    if (!value) {
-      return "Le Manager ID est requis";
-    }
-
-    const employeeExists = employees?.find((emp) => emp.id === value);
-    if (employeeExists?.active === false) {
-      return "Choose active employee";
-    }
-    if (!employeeExists) {
-      return `Employee with ${value} doesn't exist`;
-    }
-  };
   const InternTitle = () => {
     const record = useRecordContext();
 
@@ -46,12 +35,16 @@ export const InternEdit = () => {
         <TextInput source="lastname" />
         <TextInput source="email" />
         <TextInput source="departement" />
-        <NumberInput
-          source="employee_id"
-          label="Manager"
-          validate={validateEmployeeId}
-          fullWidth
-        />
+        <ReferenceInput source="employee_id" reference="employees">
+          <SelectInput
+            optionText={(record) => `${record.firstname} ${record.lastname}`}
+            label="MANAGER"
+            validate={required()}
+            fullWidth
+          />
+        </ReferenceInput>
+        <DepartmentField employees={employees} />
+
         <BooleanInput source="remunerate" />
         <FormDataConsumer<{ remunerate: boolean }>>
           {({ formData }) =>

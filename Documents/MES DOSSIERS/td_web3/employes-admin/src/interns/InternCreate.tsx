@@ -17,7 +17,7 @@ import {
 
 import { Employee } from "../interface";
 
-const DepartmentField = ({ employees }: { employees?: Employee[] }) => {
+export const DepartmentField = ({ employees }: { employees?: Employee[] }) => {
   const employeeId = useWatch({ name: "employee_id" });
   const { setValue } = useFormContext();
 
