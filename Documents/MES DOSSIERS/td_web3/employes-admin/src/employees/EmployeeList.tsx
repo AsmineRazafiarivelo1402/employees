@@ -9,8 +9,11 @@ import {
   DeleteButton,
   SearchInput,
   SelectInput,
+  TopToolbar,
+  CreateButton,
 } from "react-admin";
 import { ActiveButton } from "../components/QuickStatusToggle";
+import { AddInternButton } from "../components/CreateInterns";
 
 const employeeFilters = [
   <SearchInput source="q" key="search" alwaysOn />,
@@ -27,8 +30,15 @@ const employeeFilters = [
   />,
 ];
 
+const ListActions = () => (
+  <TopToolbar>
+    <CreateButton />
+    <AddInternButton />
+  </TopToolbar>
+);
+
 export const EmployeeList = () => (
-  <List filters={employeeFilters}>
+  <List filters={employeeFilters} actions={<ListActions />}>
     <Datagrid rowClick="show">
       <TextField source="firstname" label="Prénom" />
       <TextField source="lastname" label="Nom" />

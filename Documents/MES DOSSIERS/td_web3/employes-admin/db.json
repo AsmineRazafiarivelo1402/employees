@@ -29,6 +29,88 @@
       "remunerate": false,
       "active": true,
       "id": 1
+    },
+    {
+      "firstname": "za",
+      "lastname": "za",
+      "email": "za@gmail.com",
+      "employee_id": 6,
+      "departement": "Informatique",
+      "salary": 0,
+      "active": true,
+      "id": 2
+    },
+    {
+      "firstname": "hi",
+      "lastname": "ha",
+      "email": "hi@gmail.com",
+      "employee_id": 8,
+      "departement": "Finance",
+      "salary": 0,
+      "active": true,
+      "remunerate": false,
+      "id": 3
+    },
+    {
+      "firstname": "a",
+      "lastname": "a",
+      "email": "d@gmail.com",
+      "employee_id": 6,
+      "departement": "Informatique",
+      "remunerate": false,
+      "active": true,
+      "id": 4
+    },
+    {
+      "firstname": "é",
+      "lastname": "é",
+      "email": "a@gmail.com",
+      "employee_id": 8,
+      "departement": "Finance",
+      "active": true,
+      "remunerate": false,
+      "id": 5
+    },
+    {
+      "firstname": "a",
+      "lastname": "z",
+      "email": "z@gmail.com",
+      "employee_id": 8,
+      "departement": "Finance",
+      "active": true,
+      "remunerate": false,
+      "id": 6
+    },
+    {
+      "firstname": "a",
+      "lastname": "a",
+      "email": "a@gmail.com",
+      "employee_id": 8,
+      "departement": "Finance",
+      "remunerate": false,
+      "active": true,
+      "id": 7
+    },
+    {
+      "firstname": "aa",
+      "lastname": "a",
+      "email": "a@gmail.com",
+      "employee_id": 8,
+      "departement": "Finance",
+      "remunerate": false,
+      "active": true,
+      "id": 8
+    },
+    {
+      "firstname": "adfezgz",
+      "lastname": "azgxc",
+      "email": "azer@gmail.com",
+      "employee_id": 6,
+      "departement": "Informatique",
+      "remunerate": true,
+      "active": true,
+      "salary": 150000,
+      "id": 9
     }
   ]
 }
